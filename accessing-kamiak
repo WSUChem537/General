@@ -1,0 +1,5 @@
+For those of you that have not accessed Kamiak or a linux machine before, you will use ssh (secure shell script) to log in. On a mac this means you would open up Terminal and type: ssh username@kamiak.wsu.edu  where your username is your net id and you would put in the same credentials for wsu as you normally do.
+ 
+If you use a windows machine, specifically windows10 I suggest doing an ubuntu install to allow you to seamlessly access a terminal and use features like ssh, see here: https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview
+ 
+If you use an older version of windows, I suggest downloading PUTTY: https://www.putty.org
