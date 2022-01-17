@@ -1,5 +1,5 @@
 # Useful-information
-This repo has introductory information for the Applied Computational Chemistry Course Chem 537 at WSU
+This repo has introductory information and submission scripts for the Applied Computational Chemistry Course Chem 537 at WSU
 
 Here is a list of useful tutorials:
 
@@ -8,4 +8,8 @@ Here is a list of useful tutorials:
 3) introduction to text editors: https://phoenixnap.com/kb/best-linux-text-editors-for-coding   I will be using VIM for the course, but you are free to choose any text editor you wish, though you may need to install one on your laptop if it is not native. 
 4) Kamiak training tutorial: https://hpc.wsu.edu/news-events-and-training/training/
 5) Intro for beginners to GitHub: https://docs.github.com/en/get-started/quickstart/hello-world
-6) 
+
+
+This repo also contains submission scripts:
+
+1) a lammps submission script: lammps.sh
