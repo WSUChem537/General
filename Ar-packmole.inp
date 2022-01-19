@@ -1,8 +1,0 @@
-tolerance 2.0
-filetype xyz
-output Arbox.xyz
-
-structure /pathtoxyz/Ar.xyz
-  number 64
-  inside box  0. 0. 0. 13. 13. 13.
-end structure
