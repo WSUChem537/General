@@ -10,6 +10,15 @@ This repo has introductory information and submission scripts for the Applied Co
 5) Intro for beginners to GitHub: https://docs.github.com/en/get-started/quickstart/hello-world
 6) Using Packmol (code in this repo): http://leandro.iqm.unicamp.br/m3g/packmol/userguide.shtml  
 
+**Here is a list of useful books**
+
+Cramer, C. J., Essentials of Computational Chemistry Theories and Models. 2nd ed.; John Wiley &amp; Sons, Incorporated: 2004. ISBN: 9780470091821
+
+Jensen, F., Introduction to Computational Chemistry. 2nd ed.; Wiley: 2006. ISBN: 0470011866
+
+Jensen, F., Introduction to Computational Chemistry. 3rd ed.; Wiley: 2017. ISBN: 1118825993 
+
+
 **Introductory material in this repo:**
 
 1) introduction to force fields
