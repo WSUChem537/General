@@ -1,0 +1,22 @@
+# Sample LAMMPS input script for the energy minimization of isobutane (methylpropane) (C4H10)
+# This file is used with the isobutane.dat file and the MEAM parameter files.
+# Reference: Physical Chemistry Chemical Physics, 16(13) (2014):6233-6249.
+# Will reproduce the uncorrected MEAM value for Isobutane in Table 3, Column 4 of the paper. 
+
+# ------------------ Initialize Simulation -----------------------
+clear
+units metal
+boundary p p p
+atom_style atomic
+read_data Isobutane.dat
+
+# --------------- Define Interatomic Potential -------------------
+pair_style meam
+pair_coeff * * CH_library.meam C H CH.meam C H
+
+# -------------------- Define Output -----------------------------
+dump coord all custom 1 Isobutane.dump id type x y z
+
+# ------------------- Run Minimization ---------------------------
+minimize 1e-25 1e-25 10000 10000
+
