@@ -1,0 +1,21 @@
+# Sample LAMMPS input scripot for energy minimization for liquid
+# CHem537 Spring 2022
+# This file is used with the Ar.dat file and the LJ parameter file
+# Reference: http://www.sklogwiki.org/SklogWiki/index.php/Argon
+
+# ------------------ Initialize Simulation -----------------------
+clear
+units  #define units to be used
+boundary p p p  #define the type of periodic boundary to be employed
+atom_style atomic #figure out what this means
+read_data name.dat #data file contains the coordinates
+
+# --------------- Define Interatomic Potential -------------------
+pair_style meam #defines the type of potential to be used
+pair_coeff * * CH_library.meam C H CH.meam C H #can go to a library here or input yourself
+
+# -------------------- Define Output -----------------------------
+dump coord all custom 1 Isobutane.dump id type x y z #defines the type of output to be created
+
+# ------------------- Run Minimization ---------------------------
+minimize 1e-25 1e-25 10000 10000 #defines the parameters associated with the minimization
