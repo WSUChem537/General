@@ -1,0 +1,14 @@
+[ moleculetype ]
+; molname       nrexcl
+Arball              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       Ar             1       Ar             	Ar      	1      0.00
+
+
+[ system ]
+Arball
+
+[ molecules ]
+Arball 0
