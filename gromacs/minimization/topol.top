@@ -1,0 +1,11 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+  1             2               no              1.0     1.0
+
+[ atomtypes ]
+;name	at.num	mass	charge	ptype	sigma	epsilon
+Ar		18		39.948	0.0000	A	0.34000	0.99363
+
+#include "b.itp"
+Arball       8826
+
