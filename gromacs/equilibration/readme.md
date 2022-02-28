@@ -17,4 +17,8 @@ name.xtc contains the coordinates  !machine readable
 name.edr which contains energies, densities, temperature, PE, etc. !machine readable
 name.log file  !human readable
 
+A tutorial for the gmx command line tools to analyze the edr file can be found at: https://manual.gromacs.org/5.1.1/user-guide/cmdline.html
+
+for the gmx tools for the .edr file the command is: gmx energy -f npt_equil.edr -o density
+
 
