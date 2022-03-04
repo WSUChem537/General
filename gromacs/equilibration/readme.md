@@ -45,3 +45,6 @@ gmx make_ndx -f minim_2.tpr -o index
 gmx grompp -c nvt_87K.gro -p topol.top -f nvt_500ps_a.mdp -o sim_an -n index.ndx -maxwarn 3
 5) modify the srun in your submission script to include the new tpr file name as described above
 
+***For creating the RDF using the gmx tools ***
+
+gmx rdf -f nvt_87K.xtc -s nvt_87K.tpr -o rdf_ar_ar -cn cn_ar_ar
