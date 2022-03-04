@@ -2,6 +2,8 @@ here are the commands and procedure:
 
 load the gmx module: module load intel/xe_2016_update3 module load gromacs/16.2_mpi
 
+***For a constant temperature Equilibration***
+
 for NPT simulation from command line prompt:
 
 gmx_mpi_d grompp -f npt_500ps_87K.mdp -c minim.gro -p topol.top -o npt_equil -maxwarn 3  !creates your new tpr file for the equilibration, this should create a npt_equil.tpr
@@ -33,4 +35,13 @@ then change the tpr file used in the submission script again where the srun comm
 
 srun --ntasks=20 --mpi=pmi2 gmx_mpi_d mdrun -deffnm nvt_equil > output.$JOBID
 
+**For a simulated annealing equilibration***
+
+1) you need to create two separate sub-systems for the simulated annealing - in gromacs this is treated as a mixing event
+2) to create the two separate sub-systems, see the new simulated annealing mdp file that is uploaded and note the range of the indices of the two sub-systems.
+3) Then you need to create an index file that tells gromacs the indices of the atoms involved in the two sub-systems:
+gmx make_ndx -f minim_2.tpr -o index
+4) you need to create a new tpr file that includes the index file:
+gmx grompp -c nvt_87K.gro -p topol.top -f nvt_500ps_a.mdp -o sim_an -n index.ndx -maxwarn 3
+5) modify the srun in your submission script to include the new tpr file name as described above
 
