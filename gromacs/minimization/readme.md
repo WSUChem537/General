@@ -1,6 +1,6 @@
 Steps - 
 
-1) when making the packmole configuration - save as pdb file
+1) when making the packmole configuration - save as pdb file, ***make sure that in the very first line, the first 3 columns are the box lengths and the next three columns are the box angles
 2) move the pdb file onto kamiak
 3) load the gmx module:
   module load intel/xe_2016_update3 
