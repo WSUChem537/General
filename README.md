@@ -22,6 +22,7 @@ Jensen, F., Introduction to Computational Chemistry. 3rd ed.; Wiley: 2017. ISBN:
 **Introductory material in this repo:**
 
 1) introduction to force fields
+2) VMD tutorial - see also https://www.ks.uiuc.edu/Training/Tutorials/vmd/tutorial-html/
 
 **This repo also contains submission scripts:**
 
